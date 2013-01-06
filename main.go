@@ -39,8 +39,8 @@ import (
 //--------------------------------------
 
 const (
-	PATH_CONFIG	= "./config.json"
-	PATH_DATA 	= "./to_retrive.txt"
+	PATH_CONFIG = "./config.json"
+	PATH_DATA   = "./to_retrive.txt"
 	PATH_EXPORT = "./export_file.csv"
 )
 //--------------------------------------
@@ -62,14 +62,14 @@ var (
 // type allow to name a specific type,or struct
 // look like typedef in c
 type ConfigCrawler struct {
-	Timeout			 				int32
-	UrlBrandIdentify				string
-	UrlBrandCloseHistory			string
-	YqlQueryBrandCloseHistory		string
-	BeginDate						string
-	EndDate							string
-	RegexpJsonNodeBrandId			string
-	RegexpJsonNodeBrandDateAndClose	string
+	Timeout			 		int32
+		UrlBrandIdentify		string
+		UrlBrandCloseHistory		string
+		YqlQueryBrandCloseHistory	string
+		BeginDate			string
+		EndDate				string
+		RegexpJsonNodeBrandId		string
+		RegexpJsonNodeBrandDateAndClose	string
 }
 
 type Brand struct {

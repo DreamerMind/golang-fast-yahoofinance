@@ -1,10 +1,14 @@
 {
-	"Timeout"		 						: 10,
-	"UrlBrandIdentify" 						: "http://autoc.finance.yahoo.com/autoc?query=%s&callback=YAHOO.Finance.SymbolSuggest.ssCallback",
-	"UrlBrandCloseHistory" 					: "http://query.yahooapis.com/v1/public/yql?q=",
-	"YqlQueryBrandCloseHistory"				: "select Date, Close from yahoo.finance.historicaldata where symbol = \"%s\" and startDate=\"%s\" and endDate=\"%s\" &format=json&env=store://datatables.org/alltableswithkeys&callback=",
-	"BeginDate"								: "2011-10-08",
-	"EndDate"								: "2012-10-08",
-	"RegexpJsonNodeBrandId" 				: "\"symbol\":\"([^\"]+)\"",
-	"RegexpJsonNodeBrandDateAndClose" 		: "\"Date\":\"([^\"]+)\"[^\"]+\"Close\":\"([^\"]+)\""
+	"Timeout"		 		: 10,
+	"UrlBrandIdentify" 			: "http://autoc.finance.yahoo.com/autoc?query=%s&callback=YAHOO.Finance.SymbolSuggest.ssCallback",
+	"UrlBrandCloseHistory" 			: "http://query.yahooapis.com/v1/public/yql?q=",
+	"YqlQueryBrandCloseHistory"		: [
+						"select Date, Close from yahoo.finance.historicaldata",
+						"where symbol = \"%s\" and startDate=\"%s\" and endDate=\"%s\"",
+						"&format=json&env=store://datatables.org/alltableswithkeys&callback="
+						],
+	"BeginDate"				: "2011-10-08",
+	"EndDate"				: "2012-10-08",
+	"RegexpJsonNodeBrandId" 		: "\"symbol\":\"([^\"]+)\"",
+	"RegexpJsonNodeBrandDateAndClose"	: "\"Date\":\"([^\"]+)\"[^\"]+\"Close\":\"([^\"]+)\""
 }
