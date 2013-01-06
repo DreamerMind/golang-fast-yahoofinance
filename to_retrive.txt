@@ -1,0 +1,8 @@
+ibm
+microsoft
+dell
+google
+facebook
+samsung
+yahoo
+intel
