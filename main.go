@@ -9,10 +9,6 @@
 *	quota query restriction intensive use will end up with error message:
 *	"The current table 'yahoo.finance.historicaldata' has been blocked."
 *	"It exceeded the allotted quotas of either time or instructions"
-*
-*	Julien Balian
-*	Paradigm Programing - Procedural Language
-*
 */
 
 package main
