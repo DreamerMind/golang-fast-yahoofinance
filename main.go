@@ -1,5 +1,4 @@
 /**
-*	Mini Program 1
 *	Retrive financial data from web service
 *
 *	My aim was to check the performance of this
